@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import "./globals.css";
+import "@/src/app/globals.css";
 
 export async function generateStaticParams() {
   return [{ lang: "en" }, { lang: "id" }];
