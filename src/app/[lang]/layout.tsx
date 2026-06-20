@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import "@/src/app/globals.css";
+import type { Metadata } from "next";
 
 export async function generateStaticParams() {
   return [{ lang: "en" }, { lang: "id" }];
@@ -7,6 +8,12 @@ export async function generateStaticParams() {
 
 const locales = ["en", "id"] as const;
 type Locale = (typeof locales)[number];
+
+export const metadata: Metadata = {
+  icons: {
+    icon: "/images/favicon.ico", // Sesuai dengan letak file Anda
+  },
+};
 
 export default async function RootLayout({
   children,
