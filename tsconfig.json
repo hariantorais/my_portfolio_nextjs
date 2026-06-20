@@ -13,6 +13,9 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "incremental": true,
+
+    "resolvePackageJsonExports": true,
+
     "plugins": [
       {
         "name": "next"
