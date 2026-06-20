@@ -33,7 +33,7 @@ export const socialLinksData: SocialLink[] = [
 
 export const getActionButtonsData = (dict: DictionaryData): ActionButton[] => [
   {
-    href: "http://localhost:8000/my-cv",
+    href: "/documents/cv_hariantorais_fullstack_dev.pdf",
     label: dict.label_cv || "Curriculum Vitae",
     icon: FaRegFileAlt,
     type: "secondary", // PENGGANTIAN: Menghapus className kaku, menggantinya dengan penanda tipe varian
