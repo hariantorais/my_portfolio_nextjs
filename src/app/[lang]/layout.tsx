@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import "./globals.css";
 
 export async function generateStaticParams() {
   return [{ lang: "en" }, { lang: "id" }];
@@ -17,7 +18,7 @@ export default async function RootLayout({
   const { lang } = await params;
 
   if (!locales.includes(lang as Locale)) {
-    notFound(); // throws 404 for /de, /fr, etc
+    notFound();
   }
 
   return (
